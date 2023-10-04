@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Syllabus</title>
+<script>
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            var message = document.getElementById("message");
+
+            if (password !== confirmPassword) {
+                message.innerHTML = "Passwords do not match!";
+                return false; 
+            } else {
+                message.innerHTML = "";
+                return true; 
+        }
+    }
+    
+</script>
+ <style>
+ form{
+background-color: #E9967A;
+float: right;
+margin: 20px;
+padding: 15px;
+border: 1px solid black;
+}
+.center{
+text-align: center;
+}
+td{
+border: 1px solid black;
+padding: 10px;
+width: 60px;
+}
+</style>
+</head>
+<body bgcolor ="#FFA07A">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%D0%95%D0%BC%D0%B1%D0%BB%D0%B5%D0%BC%D0%B0_%D0%94%D0%A1%D0%A1%D0%97%D0%97%D0%86_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8.svg/300px-%D0%95%D0%BC%D0%B1%D0%BB%D0%B5%D0%BC%D0%B0_%D0%94%D0%A1%D0%A1%D0%97%D0%97%D0%86_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8.svg.png">
+<form action="/submit" method="post" target="_blank" onsubmit="return validateForm()">
+<lable for="name"><div>Name:</div></lable>
+<input type="text" id="name" name="name" required><br></br>
+
+<lable for="surname"><div>Surname:</div></lable>
+<input type="text" id="surname" name="surname" required><br></br>
+
+<lable for="email"><div>Email:</div></lable>
+<input type="email" id="email" name="email" required><br></br>
+
+<lable for="password"><div>Password:</div></lable>
+<input type="password" id="password" name="password" required><br></br>
+
+<lable for="confirmPassword"><div>Confirm password:</div></lable>
+<input type="password" id="confirmPassword" name="confirmPassword" required><br></br>
+<span id="message" style ="color: red;"></span><br></br>
+<input type="submit" value="Sign in" style="width:170px; height:30px">
+</form>
+<br>
+<table cellspacing="0">
+<tbody>
+<tr>
+<td><font color="#FFA07A">..............................</font></td>
+<td>Monday</td>
+<td>Tuesday</td>
+<td>Wednesday</td>
+<td>Thursday</td>
+<td>Friday</td>
+<td>Saturday</td>
+</tr>
+<tr>
+	<td>8:30-9:15 <br> 9:20-10:05</td>
+	<td><p class="center">ФВ <br> (парк)</td>
+	<td><p class="center">Іноземна мова <br> 6 </td>
+	<td><p class="center">ЗВП <br> 107</td>
+	<td><p class="center">ФВ <br> (парк)</td>
+	<td><p class="center">ФВ <br> (парк)</td>
+	<td><p class="center">СР <br> 406 </td>
+	</tr>
+	<tr>
+		<td> 10:25-11:10 <br> 11:15-12:00</td>
+		<td><p class="center">ЗВП <br> 101</td>
+		<td><p class="center">Право <br> 314</td>
+		<td><p class="center">ЗВП <br> 107</td>
+		<td><p class="center">Право<br> 101</td>
+		<td><p class="center">ТІМ <br> 503</td>
+		<td><p class="center">СР <br> 406</td>
+		</tr>
+		<tr>
+			<td> 12:10-13:05 <br> 13:10-13:55 </td>
+			<td><p class="center">ТС <br> 6</td>
+			<td><p class="center">ТІК <br> 6</td>
+			<td><p class="center">Прогр <br> 503</td>
+			<td><p class="center">ТС <br> 6</td>
+			<td><p class="center">ТІМ <br> 503</td>
+			<td><p class="center">СР <br> 406</td>
+			</tr>
+			<tr>
+				<td>16:10-16:55 <br> 17:00-17:45</td>
+				<td><p class="center">СР <br> 101</td>
+				<td><p class="center">СР <br> 101</td>
+				<td><p class="center">СР <br> 101</td>
+				<td><p class="center">Прогр <br> 101</td>
+				<td><p class="center">ТС <br> 101</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+	</html>
